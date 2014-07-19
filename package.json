@@ -1,0 +1,25 @@
+{
+  "name": "rainbird-config",
+  "version": "0.0.1",
+  "description": "Simple configuration management",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RainBirdAi/rainbird-config.git"
+  },
+  "keywords": [
+    "config",
+    "cli",
+    "environment",
+    "variables"
+  ],
+  "author": "Dom Davis <dom.davis@rainbird.ai>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RainBirdAi/rainbird-config/issues"
+  },
+  "homepage": "https://github.com/RainBirdAi/rainbird-config"
+}
