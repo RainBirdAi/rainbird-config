@@ -3,7 +3,7 @@
     "description": "Simple configuration management",
     "author": "Dom Davis <dom.davis@rainbird.ai>",
     "license": "ISC",
-    "main": "app.js",
+    "main": "config.js",
     "version": "0.0.1",
     "scripts": {
         "test": "mocha"
