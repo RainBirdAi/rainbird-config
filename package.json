@@ -23,6 +23,7 @@
         "variables"
     ],
     "dependencies": {
+        "merge": "*"
     },
     "devDependencies": {
         "mocha": "*",
