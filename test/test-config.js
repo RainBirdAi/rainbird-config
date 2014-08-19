@@ -12,7 +12,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.setBaseConfig('bad-path.json');
-            }).toThrow();
+            }).to.throwException();
             done();
         }
     );
@@ -21,7 +21,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.setBaseConfig('data/invalid-base-config.txt');
-            }).toThrow();
+            }).to.throwException();
             done();
         }
     );
@@ -37,7 +37,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.init('bad-path.json');
-            }).toThrow();
+            }).to.throwException();
             done();
         }
     );
@@ -46,7 +46,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.init('data/invalid-config.txt');
-            }).toThrow();
+            }).to.throwException();
             done();
         }
     );
