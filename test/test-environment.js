@@ -58,9 +58,25 @@ describe('getOverride', function() {
         var value = env.getOverride('STRING_ITEM1', '');
         expect(value).to.equal('string-item1-env-value');
     });
+
     it('should convert numeric values to numbers', function() {
         expect(env.getOverride('FLOAT_ITEM1', '')).to.equal(1.1);
     });
+
+    it('should convert the string "true" to the boolean value true',
+        function() {
+            var value = env.getOverride('BOOLEAN_TRUE', '');
+            expect(value).to.equal(true);
+        }
+    );
+
+    it('should convert the string "false" to the boolean value false',
+        function() {
+            var value = env.getOverride('BOOLEAN_FALSE', '');
+            expect(value).to.equal(false);
+        }
+    );
+
     it('should return the default value if no environment variable is set',
         function() {
             var value = "test";
