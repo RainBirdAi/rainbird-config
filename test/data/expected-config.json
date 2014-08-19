@@ -16,7 +16,19 @@
         "nested-item2": "nested-item2-config-value",
         "nested-item3": "nested-item3-base-value"
     },
-    "list-items1": [ "env-list1-item1", "env-list1-item2", "env-list1-item3" ],
-    "list-items2": [ "config-list2-item1", "config-list2-item2", "config-list2-item3" ],
-    "list-items3": [ "base-list3-item1", "base-list3-item2", "base-list3-item3" ]
+    "list-items1": {
+        "0": "env-list1-item1",
+        "1": "env-list1-item2",
+        "2": "env-list1-item3"
+    },
+    "list-items2": {
+        "0": "config-list2-item1",
+        "1": "config-list2-item2",
+        "2": "config-list2-item3"
+    },
+    "list-items3": {
+        "0": "base-list3-item1",
+        "1": "base-list3-item2",
+        "2": "base-list3-item3"
+    }
 }
