@@ -1,35 +1,9 @@
-var merge = require('merge');
-var env = require('./lib/environment.js');
+var override = require('./lib/override.js');
 
 var config = {};
 var baseConfig = {};
 var environmentPrefix = '';
 
-function getOverrides(object, stub) {
-    var overrides = {};
-
-    if (stub === undefined) {
-        stub = '';
-    } else {
-        stub = stub + '_';
-    }
-
-    for (var index in object) {
-        if (object.hasOwnProperty(index)) {
-            var path = stub + index;
-            var value = object[index];
-            var name = env.toVariableName(path, environmentPrefix);
-
-            if (value !== null && typeof(value) == 'object') {
-                overrides[index] = getOverrides(value, path);
-            } else {
-                overrides[index] = env.getOverride(name, value);
-            }
-        }
-    }
-
-    return overrides;
-}
 // ## Initial Setup
 //
 // Setup should be performed before the call to `init` otherwise default values
@@ -60,7 +34,8 @@ function setEnvironmentPrefix(prefix) {
 
 function init(path) {
     var userConfig = require(path);
-    config = getOverrides(merge(baseConfig, userConfig));
+    config = override.merge(baseConfig, userConfig);
+    config = override.getOverrides(config, environmentPrefix);
 }
 
 // Return the entire configuration JSON using `getConfig`. If `init` has not
