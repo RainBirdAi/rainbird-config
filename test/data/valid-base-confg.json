@@ -1,0 +1,22 @@
+{
+    "string-item1": "string-item1-base-value",
+    "string-item2": "string-item2-base-value",
+    "string-item3": "string-item3-base-value",
+    "boolean-item1": true,
+    "boolean-item2": true,
+    "boolean-item3": true,
+    "int-item1": 31,
+    "int-item2": 32,
+    "int-item3": 33,
+    "float-item1": 3.1,
+    "float-item2": 3.2,
+    "float-item3": 3.3,
+    "nested-items": {
+        "nested-item1": "nested-item1-base-value",
+        "nested-item2": "nested-item2-base-value",
+        "nested-item3": "nested-item3-base-value"
+    },
+    "list-items1": [ "base-list1-item1", "base-list1-item2", "base-list1-item3" ],
+    "list-items2": [ "base-list2-item1", "base-list2-item2", "base-list2-item3" ],
+    "list-items3": [ "base-list3-item1", "base-list3-item2", "base-list3-item3" ]
+}

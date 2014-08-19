@@ -1,0 +1,16 @@
+{
+    "string-item1": "string-item1-config-value",
+    "string-item2": "string-item2-config-value",
+    "boolean-item1": false,
+    "boolean-item2": false,
+    "int-item1": 21,
+    "int-item2": 22,
+    "float-item1": 2.1,
+    "float-item2": 2.2,
+    "nested-items": {
+        "nested-item1": "nested-item1-config-value",
+        "nested-item2": "nested-item2-config-value"
+    },
+    "list-items1": [ "config-list1-item1", "config-list1-item2", "config-list1-item3" ],
+    "list-items2": [ "config-list2-item1", "config-list2-item2", "config-list2-item3" ]
+}
