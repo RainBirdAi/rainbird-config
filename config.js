@@ -1,3 +1,4 @@
+var fs = require('fs');
 var override = require('./lib/override.js');
 
 var config = {};
@@ -17,7 +18,7 @@ var environmentPrefix = '';
 // for configuration values.
 
 function setBaseConfig(path) {
-    baseConfig = require(path);
+    baseConfig = JSON.parse(fs.readFileSync(path, 'utf8'));
 }
 
 // Optionally set the prefix for environment variables using
@@ -33,7 +34,7 @@ function setEnvironmentPrefix(prefix) {
 // `undefined`.
 
 function init(path) {
-    var userConfig = require(path);
+    var userConfig = JSON.parse(fs.readFileSync(path, 'utf8'));
     config = override.merge(baseConfig, userConfig);
     config = override.getOverrides(config, environmentPrefix);
 }
