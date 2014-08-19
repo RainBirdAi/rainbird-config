@@ -6,7 +6,7 @@
     "main": "config.js",
     "version": "0.0.1",
     "scripts": {
-        "test": "mocha"
+        "test": ". test/data/environment.sh && mocha"
     },
     "homepage": "https://github.com/RainBirdAi/rainbird-config",
     "repository": {
