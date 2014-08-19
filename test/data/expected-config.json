@@ -1,0 +1,22 @@
+{
+    "string-item1": "string-item1-env-value",
+    "string-item2": "string-item2-config-value",
+    "string-item3": "string-item3-base-value",
+    "boolean-item1": true,
+    "boolean-item2": false,
+    "boolean-item3": true,
+    "int-item1": 11,
+    "int-item2": 22,
+    "int-item3": 33,
+    "float-item1": 1.1,
+    "float-item2": 2.2,
+    "float-item3": 3.3,
+    "nested-items": {
+        "nested-item1": "nested-item1-env-value",
+        "nested-item2": "nested-item2-config-value",
+        "nested-item3": "nested-item3-base-value"
+    },
+    "list-items1": [ "env-list1-item1", "env-list1-item2", "env-list1-item3" ],
+    "list-items2": [ "config-list2-item1", "config-list2-item2", "config-list2-item3" ],
+    "list-items3": [ "base-list3-item1", "base-list3-item2", "base-list3-item3" ]
+}
