@@ -7,7 +7,7 @@
     "version": "0.0.1",
     "scripts": {
         "pretest": "rm -rf docs && rm -rf coverage && docco *.js lib/*.js",
-        "test": ". test/data/environment.sh && istanbul cover _mocha -- -R spec",
+        "test": "jshint *.js lib/*.js test/*.js && . test/data/environment.sh && istanbul cover _mocha -- -R spec",
         "posttest": "istanbul report html"
     },
     "homepage": "https://github.com/RainBirdAi/rainbird-config",
@@ -27,6 +27,7 @@
     "dependencies": {
     },
     "devDependencies": {
+        "jshint": "*",
         "mocha": "*",
         "expect.js": "*",
         "docco": "*",
