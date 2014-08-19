@@ -137,6 +137,7 @@ var config = conf.getConfig();
 # Testing
 
 ```bash
+npm install -g jshint
 npm install -g mocha
 npm install -g istanbul
 npm test
