@@ -4,7 +4,7 @@
     "author": "Dom Davis <dom.davis@rainbird.ai>",
     "license": "ISC",
     "main": "config.js",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "scripts": {
         "pretest": "rm -rf docs && rm -rf coverage && docco *.js lib/*.js",
         "test": "jshint *.js lib/*.js test/*.js && . test/data/environment.sh && istanbul cover _mocha -- -R spec",
