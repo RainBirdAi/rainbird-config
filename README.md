@@ -35,7 +35,7 @@ For a given supplied base configuration file of:
         "bar": foobar
     }
 }
-```json
+```
 
 The value of `foo.bar` will be `foobar` and the value of `a.b` will be `c`.
 
