@@ -1,5 +1,7 @@
 # rainbird-config
 
+[ ![Codeship Status for RainBirdAi/rainbird-config](https://www.codeship.io/projects/32aaf590-35a4-0132-af7d-4e5daa8e92bc/status)](https://www.codeship.io/projects/41121)
+
 `rainbird-config` allows a base JSON configuration file to be overridden with 
 values from a supplied JSON configuration file and/or from values set in 
 environment variables.
