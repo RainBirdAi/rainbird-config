@@ -1,6 +1,5 @@
 # Logs
 logs
-*.log
 
 # Runtime data
 pids
@@ -29,4 +28,6 @@ node_modules
 
 # Generated documents
 docs
+reports
+
 npm-debug.log
