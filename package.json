@@ -4,10 +4,10 @@
     "author": "Dom Davis <dom.davis@rainbird.ai>",
     "license": "ISC",
     "main": "config.js",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "scripts": {
         "pretest": "rm -rf docs && rm -rf coverage && docco *.js lib/*.js",
-        "test": "jshint *.js lib/*.js test/*.js && . test/data/environment.sh && istanbul cover _mocha -- -R spec",
+        "test": "rblint -f ./linter.json && . test/data/environment.sh && istanbul cover _mocha -- -R spec",
         "posttest": "istanbul report html"
     },
     "homepage": "https://github.com/RainBirdAi/rainbird-config",
@@ -27,7 +27,6 @@
     "dependencies": {
     },
     "devDependencies": {
-        "jshint": "*",
         "mocha": "*",
         "expect.js": "*",
         "docco": "*",
