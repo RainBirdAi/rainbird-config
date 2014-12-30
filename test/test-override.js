@@ -1,12 +1,12 @@
-var expect = require('expect.js');
+var expect = require('chai').expect;
 var override = require('../lib/override.js');
 
 describe('merge', function() {
     it('should add missing branches to the base config', function (done) {
         var base = {};
-        var overriden = { 'key': 'value'};
-        var  result = override.merge(base, overriden);
-        expect(result).to.eql(overriden);
+        var overridden = { 'key': 'value'};
+        var  result = override.merge(base, overridden);
+        expect(result).to.eql(overridden);
         done();
     });
 });

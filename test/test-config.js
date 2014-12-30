@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var expect = require('chai').expect;
 var conf = require('../config.js');
 
 describe('Config', function() {
@@ -12,7 +12,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.setBaseConfig('bad-path.json');
-            }).to.throwException();
+            }).to.throw(Error);
             done();
         }
     );
@@ -21,7 +21,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.setBaseConfig('./test/data/invalid-base-config.txt');
-            }).to.throwException();
+            }).to.throw(Error);
             done();
         }
     );
@@ -37,7 +37,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.init('bad-path.json');
-            }).to.throwException();
+            }).to.throw(Error);
             done();
         }
     );
@@ -46,7 +46,7 @@ describe('Config', function() {
         function(done) {
             expect(function() {
                 conf.init('./test/data/invalid-config.txt');
-            }).to.throwException();
+            }).to.throw(Error);
             done();
         }
     );

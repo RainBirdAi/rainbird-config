@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var expect = require('chai').expect;
 var env = require('../lib/environment.js');
 
 // By providing uppercase variable names with no spaces and no prefix we can
