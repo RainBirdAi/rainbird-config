@@ -145,6 +145,28 @@ npm install -g istanbul
 npm test
 ```
 
+# Release Notes
+
+## Version 0.1.3
+
+  * [Misc] Move from expect.js to chai
+  * [Misc] General tidy up of the package
+
+## Version 0.1.2
+
+  * [Misc] Make project conform to internal standards
+  * [Misc] Add license text to all source files
+  * [Misc] Add release notes
+
+## Version 0.1.1
+
+  * [New] Run JSHint on testing
+  * [Misc] Fix documentation
+
+## Version 0.1.0
+
+  * [New] Initial release
+
 # License
 
 Copyright (c) 2014, RainBird Technologies <follow@rainbird.ai>
