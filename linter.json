@@ -1,4 +1,5 @@
 {
     "includeFiles": ["config.js", "lib/", "test/"],
-    "excludeFiles": []
+    "excludeFiles": [],
+    "lintOnly": ["test/"]
 }
