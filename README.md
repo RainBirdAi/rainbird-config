@@ -19,10 +19,10 @@ For a given base configuration file of:
 ```json
 {
     "foo": {
-        "bar": baz
+        "bar": "baz"
     },
     "a": {
-        "b": c
+        "b": "c"
     }
 }
 ```
@@ -34,7 +34,7 @@ For a given supplied base configuration file of:
 ```json
 {
     "foo": {
-        "bar": foobar
+        "bar": "foobar"
     }
 }
 ```
@@ -164,12 +164,12 @@ npm test
 
 ## Version 0.1.1
 
-  * [New] Run JSHint on testing
+  *  [New] Run JSHint on testing
   * [Misc] Fix documentation
 
 ## Version 0.1.0
 
-  * [New] Initial release
+  *  [New] Initial release
 
 # License
 
