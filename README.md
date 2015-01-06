@@ -147,6 +147,10 @@ npm test
 
 # Release Notes
 
+## Version 0.1.4
+
+  * [Misc] Lock down the version numbers of any dependencies
+
 ## Version 0.1.3
 
   * [Misc] Move from expect.js to chai
