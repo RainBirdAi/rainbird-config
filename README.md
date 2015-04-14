@@ -147,6 +147,11 @@ npm test
 
 # Release Notes
 
+## Version 0.1.5
+
+  * [Misc] There are some bugs with later versions of `npm` which are causing
+           issues. Locking us to a known good version of node stops this.
+
 ## Version 0.1.4
 
   * [Misc] Lock down the version numbers of any dependencies
