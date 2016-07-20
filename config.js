@@ -50,6 +50,7 @@ module.exports.setBaseConfig = setBaseConfig;
 module.exports.setEnvironmentPrefix = setEnvironmentPrefix;
 module.exports.init = init;
 module.exports.getConfig = getConfig;
+module.exports.contextConfig = require('./lib/contextConfig');
 
 // ## License
 //
