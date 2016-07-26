@@ -1,9 +1,13 @@
 var fs = require('fs');
 var override = require('./lib/override.js');
 
+var versionList = require('./lib/versionList');
+
 var config = {};
 var baseConfig = {};
 var environmentPrefix = '';
+
+versionList.process(this, require('./package.json'), []);
 
 // ## Initial Setup
 //
@@ -51,6 +55,7 @@ module.exports.setEnvironmentPrefix = setEnvironmentPrefix;
 module.exports.init = init;
 module.exports.getConfig = getConfig;
 module.exports.contextConfig = require('./lib/contextConfig');
+module.exports.versionList = require('./lib/versionList');
 
 // ## License
 //
