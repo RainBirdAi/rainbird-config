@@ -1,7 +1,7 @@
 {
     "name": "rainbird-config",
     "description": "Simple configuration management",
-    "author": "Dom Davis <dom.davis@rainbird.ai>",
+    "author": "Rainbird <follow@rainbird.ai>",
     "license": "ISC",
     "main": "config.js",
     "version": "2.3.0",
