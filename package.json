@@ -4,7 +4,7 @@
     "author": "Rainbird <follow@rainbird.ai>",
     "license": "ISC",
     "main": "config.js",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "engines" : {
         "node" : "0.10.30"
     },
