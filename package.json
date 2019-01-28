@@ -4,7 +4,7 @@
     "author": "Rainbird <follow@rainbird.ai>",
     "license": "ISC",
     "main": "config.js",
-    "version": "2.6.0",
+    "version": "2.29.0",
     "scripts": {
         "pretest": "rm -rf docs && rm -rf coverage && docco *.js lib/*.js",
         "test": "rblint -f ./linter.json && . test/data/environment.sh && istanbul cover _mocha -- -R spec",
